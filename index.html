@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="UI Remix is an example-driven assistant for mobile UI design. Powered by a multimodal retrieval-augmented generation (MMRAG) model, it supports global and local remixing from traceable real-world examples with source transparency cues.">
+  <meta name="keywords" content="UI Remix, UI design, example-driven design, MMRAG, retrieval-augmented generation, end-user design, IUI 2026, interactive systems">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>UI Remix: Interactive Example Retrieval and Remixing</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- Remove favicon by keeping this commented out -->
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <!-- Optional links -->
+      <a class="navbar-item" href="https://junlingwang0512.github.io/">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <a class="navbar-item" href="https://peachlab.inf.ethz.ch/">
+        ETH PEACH LAB
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <h1 class="title is-1 publication-title">
+            UI Remix: Supporting UI Design Through Interactive Example Retrieval and Remixing
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Junling Wang*</span>,
+            <span class="author-block">Hongyi Lan*</span>,
+            <span class="author-block">Xiaotian Su</span>,
+            <span class="author-block">Mustafa Doga Dogan</span>,
+            <span class="author-block">April Yi Wang</span>
+          </div>
+
+          <div class="is-size-6" style="margin-top: 6px;">
+            <span class="author-block"><b>ETH Zurich</b></span> ·
+            <span class="author-block"><b>Adobe Research</b></span>
+            <div style="margin-top: 4px;"><i>*Equal contribution</i></div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- DOI -->
+              <span class="link-block">
+                <a href="https://doi.org/10.1145/3742413.3789154"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-doi"></i></span>
+                  <span>DOI</span>
+                </a>
+              </span>
+
+              <!-- Paper PDF (recommended: host local PDF OR point to ACM/arXiv) -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2601.18759"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- arXiv (optional) -->
+              <!--
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/YOUR_ARXIV_ID"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              -->
+
+              <!-- Code -->
+              <span class="link-block">
+                <a href="https://github.com/ETH-PEACH-Lab/UI_Remix"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+              <!-- Demo video (optional) -->
+              <!--
+              <span class="link-block">
+                <a href="https://youtu.be/YOUR_VIDEO_ID"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-youtube"></i></span>
+                  <span>Demo</span>
+                </a>
+              </span>
+              -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser / Figure 1 -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- Replace with your exported Figure 1 image -->
+      <img src="./static/images/figure1_uiremix.png"
+           alt="UI Remix system overview"
+           style="width:100%; border-radius: 12px;">
+
+      <h2 class="subtitle has-text-centered" style="margin-top: 12px;">
+        <b>UI Remix</b> is an example-driven assistant for mobile UI design with three main panels:
+        (A) a Conversation Panel for chat/search/apply, (B) an Example Gallery that shows retrieved real-world UI examples
+        with source transparency cues (e.g., ratings, downloads, developer info), and (C) an Editable Canvas that toggles
+        between a live preview and code.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Designing user interfaces (UIs) is a critical step when launching products, building portfolios, or personalizing projects,
+            yet end users without design expertise often struggle to articulate their intent and to trust design choices.
+            Existing example-based tools either promote broad exploration, which can cause overwhelm and design drift, or require adapting a single example, risking design fixation.
+          </p>
+
+          <p>
+            We present <b>UI Remix</b>, an interactive system that supports mobile UI design through an example-driven workflow.
+            Powered by a multimodal retrieval-augmented generation (MMRAG) model, UI Remix enables iterative search, selection, and adaptation of examples
+            at both the global (whole interface) and local (component) level. To foster trust, it presents source transparency cues such as
+            ratings, download counts, and developer information. In an empirical study with 24 end users, UI Remix improved participants’ ability
+            to achieve their design goals, facilitated effective iteration, and encouraged exploration of alternative designs.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">How it works</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            UI Remix supports three interaction modes (Chat, Search, Apply) through two core modules: a <b>retriever</b> and a <b>generator</b>.
+            Users can iterate between <b>global remix</b> (adapting the whole interface) and <b>local remix</b> (refining a selected component),
+            while transparency cues help assess example credibility.
+          </p>
+        </div>
+
+        <!-- Replace with your exported Figure 2/pipeline figure -->
+        <img src="./static/images/figure2_architecture.png"
+             alt="UI Remix technical architecture"
+             style="width:100%; border-radius: 12px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional: System demo video (embedded) -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">System Demo</h2>
+
+        <!-- Replace YOUR_VIDEO_ID with the YouTube ID -->
+        <div class="publication-video">
+          <iframe
+            src="https://www.youtube.com/embed/Yl4PJWlXizE"
+            title="UI Remix demo video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px;">
+          </iframe>
+        </div>
+
+        <p class="has-text-centered" style="margin-top: 10px;">
+          Demo video illustrating example retrieval, global remix, and local remix workflows.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{wang2026uiremix,
+  author    = {Wang, Junling and Lan, Hongyi and Su, Xiaotian and Dogan, Mustafa Doga and Wang, April Yi},
+  title     = {UI Remix: Supporting UI Design Through Interactive Example Retrieval and Remixing},
+  booktitle = {Proceedings of the 31st International Conference on Intelligent User Interfaces (IUI '26)},
+  year      = {2026},
+  address   = {Paphos, Cyprus},
+  doi       = {10.1145/3742413.3789154}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://doi.org/10.1145/3742413.3789154" aria-label="DOI">
+        <i class="ai ai-doi"></i>
+      </a>
+      <a class="icon-link" href="https://arxiv.org/abs/2601.18759" aria-label="PDF">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ETH-PEACH-Lab/UI_Remix" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <div class="content has-text-centered" style="margin-top: 10px;">
+      <p style="font-size: 0.9rem;">
+        Website licensed under
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // minimal burger toggle (works without jQuery)
+  document.addEventListener('DOMContentLoaded', () => {
+    const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    burgers.forEach(el => {
+      el.addEventListener('click', () => {
+        const target = document.querySelector('.navbar-menu');
+        el.classList.toggle('is-active');
+        target.classList.toggle('is-active');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
