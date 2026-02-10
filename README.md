@@ -1,15 +1,15 @@
-# ChatCommunity
+# UI Remix
 
-This repository hosts the source code for the **ChatCommunity project website**:
+This repository hosts the source code for the **UI Remix project website**:
 
-🔗 https://github.com/ETH-PEACH-Lab/ChatCommunity
+🔗 https://github.com/ETH-PEACH-Lab/UI_Remix
 
-ChatCommunity accompanies the paper:
+UI Remix accompanies the paper:
 
-**Bridging Instead of Replacing Online Coding Communities with AI through Community-Enriched Chatbot Designs**  
-*Proceedings of the ACM on Human-Computer Interaction (PACM HCI), CSCW 2026*
+**UI Remix: Supporting UI Design Through Interactive Example Retrieval and Remixing**  
+*Proceedings of the 31st International Conference on Intelligent User Interfaces (IUI 2026)*
 
-The website presents the system overview, design rationale, and evaluation results of **ChatCommunity**, a Community-Enriched AI chatbot that integrates user-generated content and social signals from online coding communities into LLM-based assistance.
+The website presents the system overview, interaction design, and empirical findings of **UI Remix**—an example-driven assistant for mobile UI design. UI Remix supports iterative search, selection, and adaptation of real-world UI examples at both global and local levels, while providing source transparency cues to help users assess credibility and build trust.
 
 ---
 
@@ -18,14 +18,13 @@ The website presents the system overview, design rationale, and evaluation resul
 If you find this work useful, please cite:
 
 ```bibtex
-@article{wang2026chatcommunity,
-  author  = {Wang, Junling and Goswami, Lahari and Umbelino, Gustavo Kreia and Chau, Kiara and Sachan, Mrinmaya and Wang, April},
-  title   = {Bridging Instead of Replacing Online Coding Communities with AI through Community-Enriched Chatbot Designs},
-  journal = {Proc. ACM Hum.-Comput. Interact.},
-  volume  = {10},
-  number  = {2},
-  year    = {2026},
-  doi     = {10.1145/3788044}
+@inproceedings{wang2026uiremix,
+  author    = {Wang, Junling and Lan, Hongyi and Su, Xiaotian and Dogan, Mustafa Doga and Wang, April Yi},
+  title     = {UI Remix: Supporting UI Design Through Interactive Example Retrieval and Remixing},
+  booktitle = {Proceedings of the 31st International Conference on Intelligent User Interfaces (IUI '26)},
+  year      = {2026},
+  address   = {Paphos, Cyprus},
+  doi       = {10.1145/3742413.3789154}
 }
 ```
 # Website License
